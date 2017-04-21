@@ -1,0 +1,661 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a>cordova-fabric-plugin (v1.1.7)</a>
+</h1>
+<h4>Cordova Fabric.io Plugin</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cordova-fabric-plugin">module cordova-fabric-plugin</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-fabric-plugin.</span>android_helper</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-fabric-plugin.</span>ios_helper</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-fabric-plugin.</span>utilities</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cordova-fabric-plugin.android_helper">module cordova-fabric-plugin.android_helper</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-fabric-plugin.android_helper.addFabricBuildToolsGradle">
+            function <span class="apidocSignatureSpan">cordova-fabric-plugin.android_helper.</span>addFabricBuildToolsGradle
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-fabric-plugin.android_helper.removeFabricBuildToolsFromGradle">
+            function <span class="apidocSignatureSpan">cordova-fabric-plugin.android_helper.</span>removeFabricBuildToolsFromGradle
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cordova-fabric-plugin.ios_helper">module cordova-fabric-plugin.ios_helper</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-fabric-plugin.ios_helper.addShellScriptBuildPhase">
+            function <span class="apidocSignatureSpan">cordova-fabric-plugin.ios_helper.</span>addShellScriptBuildPhase
+            <span class="apidocSignatureSpan">(context, xcodeProjectPath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-fabric-plugin.ios_helper.removeShellScriptBuildPhase">
+            function <span class="apidocSignatureSpan">cordova-fabric-plugin.ios_helper.</span>removeShellScriptBuildPhase
+            <span class="apidocSignatureSpan">(context, xcodeProjectPath)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cordova-fabric-plugin.utilities">module cordova-fabric-plugin.utilities</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-fabric-plugin.utilities.getAppName">
+            function <span class="apidocSignatureSpan">cordova-fabric-plugin.utilities.</span>getAppName
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-fabric-plugin.utilities.getPluginConfig">
+            function <span class="apidocSignatureSpan">cordova-fabric-plugin.utilities.</span>getPluginConfig
+            <span class="apidocSignatureSpan">(platform)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-fabric-plugin.utilities.getPluginId">
+            function <span class="apidocSignatureSpan">cordova-fabric-plugin.utilities.</span>getPluginId
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-fabric-plugin.utilities.getXcodeProjectPath">
+            function <span class="apidocSignatureSpan">cordova-fabric-plugin.utilities.</span>getXcodeProjectPath
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-fabric-plugin.utilities.readBuildGradle">
+            function <span class="apidocSignatureSpan">cordova-fabric-plugin.utilities.</span>readBuildGradle
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-fabric-plugin.utilities.writeBuildGradle">
+            function <span class="apidocSignatureSpan">cordova-fabric-plugin.utilities.</span>writeBuildGradle
+            <span class="apidocSignatureSpan">(buildGradle)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cordova-fabric-plugin" id="apidoc.module.cordova-fabric-plugin">module cordova-fabric-plugin</a></h1>
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cordova-fabric-plugin.android_helper" id="apidoc.module.cordova-fabric-plugin.android_helper">module cordova-fabric-plugin.android_helper</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-fabric-plugin.android_helper.addFabricBuildToolsGradle" id="apidoc.element.cordova-fabric-plugin.android_helper.addFabricBuildToolsGradle">
+        function <span class="apidocSignatureSpan">cordova-fabric-plugin.android_helper.</span>addFabricBuildToolsGradle
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addFabricBuildToolsGradle = function () {
+
+    var buildGradle = utilities.readBuildGradle();
+
+    buildGradle +=  [
+        "",
+        "// Fabric Cordova Plugin - Start Fabric Build Tools ",
+        "buildscript {",
+        "    repositories {",
+        "        maven { url 'https://maven.fabric.io/public' }",
+        "    }",
+        "    dependencies {",
+        "        classpath 'io.fabric.tools:gradle:1.+'",
+        "    }",
+        "}",
+        "",
+        "apply plugin: 'io.fabric'",
+        "// Fabric Cordova Plugin - End Fabric Build Tools",
+    ].join("\n");
+
+    utilities.writeBuildGradle(buildGradle);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var platforms = context.opts.cordova.platforms;
+
+// Modify the Gradle build file to add a task that will upload the debug symbols
+// at build time.
+if (platforms.indexOf("android") !== -1) {
+    androidHelper.removeFabricBuildToolsFromGradle();
+    androidHelper.<span class="apidocCodeKeywordSpan">addFabricBuildToolsGradle</span>();
+}
+
+// Add a build phase which runs a shell script that executes the Crashlytics
+// run command line tool which uploads the debug symbols at build time.
+if (platforms.indexOf("ios") !== -1) {
+    var xcodeProjectPath = utilities.getXcodeProjectPath(context);
+    iosHelper.removeShellScriptBuildPhase(context, xcodeProjectPath);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-fabric-plugin.android_helper.removeFabricBuildToolsFromGradle" id="apidoc.element.cordova-fabric-plugin.android_helper.removeFabricBuildToolsFromGradle">
+        function <span class="apidocSignatureSpan">cordova-fabric-plugin.android_helper.</span>removeFabricBuildToolsFromGradle
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">removeFabricBuildToolsFromGradle = function () {
+
+    var buildGradle = utilities.readBuildGradle();
+
+    buildGradle = buildGradle.replace(/\n\/\/ Fabric Cordova Plugin - Start Fabric Build Tools[\s\S]*\/\/ Fabric Cordova Plugin -
+End Fabric Build Tools/, "");
+
+    utilities.writeBuildGradle(buildGradle);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+module.exports = function(context) {
+
+var platforms = context.opts.cordova.platforms;
+
+// Modify the Gradle build file to add a task that will upload the debug symbols
+// at build time.
+if (platforms.indexOf("android") !== -1) {
+    androidHelper.<span class="apidocCodeKeywordSpan">removeFabricBuildToolsFromGradle</span>();
+    androidHelper.addFabricBuildToolsGradle();
+}
+
+// Add a build phase which runs a shell script that executes the Crashlytics
+// run command line tool which uploads the debug symbols at build time.
+if (platforms.indexOf("ios") !== -1) {
+    var xcodeProjectPath = utilities.getXcodeProjectPath(context);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cordova-fabric-plugin.ios_helper" id="apidoc.module.cordova-fabric-plugin.ios_helper">module cordova-fabric-plugin.ios_helper</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-fabric-plugin.ios_helper.addShellScriptBuildPhase" id="apidoc.element.cordova-fabric-plugin.ios_helper.addShellScriptBuildPhase">
+        function <span class="apidocSignatureSpan">cordova-fabric-plugin.ios_helper.</span>addShellScriptBuildPhase
+        <span class="apidocSignatureSpan">(context, xcodeProjectPath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addShellScriptBuildPhase = function (context, xcodeProjectPath) {
+
+    var pluginConfig = utilities.getPluginConfig("ios");
+    var xcode = context.requireCordovaModule("xcode");
+
+    // Read and parse the XCode project (.pxbproj) from disk.
+    // File format information: http://www.monobjc.net/xcode-project-file-format.html
+    var xcodeProject = xcode.project(xcodeProjectPath);
+    xcodeProject.parseSync();
+
+    // Build the body of the script to be executed during the build phase.
+    var script = '"' + '${SRCROOT}' + "/\\\"" + utilities.getAppName(context) + "\\\"/Plugins/cordova-fabric-plugin/Fabric.framework
+/run " + pluginConfig.apiKey + " " + pluginConfig.apiSecret + '"';
+
+    // Generate a unique ID for our new build phase.
+    var id = xcodeProject.generateUuid();
+    // Create the build phase.
+    xcodeProject.hash.project.objects.PBXShellScriptBuildPhase[id] = {
+        isa: "PBXShellScriptBuildPhase",
+        buildActionMask: 2147483647,
+        files: [],
+        inputPaths: [],
+        name: comment,
+        outputPaths: [],
+        runOnlyForDeploymentPostprocessing: 0,
+        shellPath: "/bin/sh",
+        shellScript: script,
+        showEnvVarsInLog: 0
+    };
+
+    // Add a comment to the block (viewable in the source of the pbxproj file).
+    xcodeProject.hash.project.objects.PBXShellScriptBuildPhase[id + "_comment"] = comment;
+
+    // Add this new shell script build phase block to the targets.
+    for (var nativeTargetId in xcodeProject.hash.project.objects.PBXNativeTarget) {
+
+        // Skip over the comment blocks.
+        if (nativeTargetId.indexOf("_comment") !== -1) {
+            continue;
+        }
+
+        var nativeTarget = xcodeProject.hash.project.objects.PBXNativeTarget[nativeTargetId];
+
+        nativeTarget.buildPhases.push({
+            value: id,
+            comment: comment
+        });
+    }
+
+    // Finally, write the .pbxproj back out to disk.
+    fs.writeFileSync(xcodeProjectPath, xcodeProject.writeSync());
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    }
+
+    // Add a build phase which runs a shell script that executes the Crashlytics
+    // run command line tool which uploads the debug symbols at build time.
+    if (platforms.indexOf("ios") !== -1) {
+        var xcodeProjectPath = utilities.getXcodeProjectPath(context);
+        iosHelper.removeShellScriptBuildPhase(context, xcodeProjectPath);
+        iosHelper.<span class="apidocCodeKeywordSpan">addShellScriptBuildPhase</span>(context, xcodeProjectPath);
+    }
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-fabric-plugin.ios_helper.removeShellScriptBuildPhase" id="apidoc.element.cordova-fabric-plugin.ios_helper.removeShellScriptBuildPhase">
+        function <span class="apidocSignatureSpan">cordova-fabric-plugin.ios_helper.</span>removeShellScriptBuildPhase
+        <span class="apidocSignatureSpan">(context, xcodeProjectPath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">removeShellScriptBuildPhase = function (context, xcodeProjectPath) {
+
+    var xcode = context.requireCordovaModule("xcode");
+
+    // Read and parse the XCode project (.pxbproj) from disk.
+    // File format information: http://www.monobjc.net/xcode-project-file-format.html
+    var xcodeProject = xcode.project(xcodeProjectPath);
+    xcodeProject.parseSync();
+
+    // First, we want to delete the build phase block itself.
+
+    var buildPhases = xcodeProject.hash.project.objects.PBXShellScriptBuildPhase;
+
+    for (var buildPhaseId in buildPhases) {
+
+        var buildPhase = xcodeProject.hash.project.objects.PBXShellScriptBuildPhase[buildPhaseId];
+        var shouldDelete = false;
+
+        if (buildPhaseId.indexOf("_comment") === -1) {
+            // Dealing with a build phase block.
+
+            // If the name of this block matches ours, then we want to delete it.
+            shouldDelete = buildPhase.name &amp;&amp; buildPhase.name.indexOf(comment) !== -1;
+        }
+        else {
+            // Dealing with a comment block.
+
+            // If this is a comment block that matches ours, then we want to delete it.
+            shouldDelete = buildPhaseId === comment;
+        }
+
+        if (shouldDelete) {
+            delete buildPhases[buildPhaseId];
+        }
+    }
+
+    // Second, we want to delete the native target reference to the block.
+
+    var nativeTargets = xcodeProject.hash.project.objects.PBXNativeTarget;
+
+    for (var nativeTargetId in nativeTargets) {
+
+        // Skip over the comment blocks.
+        if (nativeTargetId.indexOf("_comment") !== -1) {
+            continue;
+        }
+
+        var nativeTarget = nativeTargets[nativeTargetId];
+
+        // We remove the reference to the block by filtering out the the ones that match.
+        nativeTarget.buildPhases = nativeTarget.buildPhases.filter(function (buildPhase) {
+            return buildPhase.comment !== comment;
+        });
+    }
+
+    // Finally, write the .pbxproj back out to disk.
+    fs.writeFileSync(xcodeProjectPath, xcodeProject.writeSync());
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        androidHelper.addFabricBuildToolsGradle();
+    }
+
+    // Add a build phase which runs a shell script that executes the Crashlytics
+    // run command line tool which uploads the debug symbols at build time.
+    if (platforms.indexOf("ios") !== -1) {
+        var xcodeProjectPath = utilities.getXcodeProjectPath(context);
+        iosHelper.<span class="apidocCodeKeywordSpan">removeShellScriptBuildPhase</span>(context, xcodeProjectPath);
+        iosHelper.addShellScriptBuildPhase(context, xcodeProjectPath);
+    }
+};
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cordova-fabric-plugin.utilities" id="apidoc.module.cordova-fabric-plugin.utilities">module cordova-fabric-plugin.utilities</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-fabric-plugin.utilities.getAppName" id="apidoc.element.cordova-fabric-plugin.utilities.getAppName">
+        function <span class="apidocSignatureSpan">cordova-fabric-plugin.utilities.</span>getAppName
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getAppName = function (context) {
+    var ConfigParser = context.requireCordovaModule("cordova-lib").configparser;
+    var config = new ConfigParser("config.xml");
+    return config.name();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// Read and parse the XCode project (.pxbproj) from disk.
+// File format information: http://www.monobjc.net/xcode-project-file-format.html
+var xcodeProject = xcode.project(xcodeProjectPath);
+xcodeProject.parseSync();
+
+// Build the body of the script to be executed during the build phase.
+var script = '"' + '${SRCROOT}' + "/\\\"" + utilities.<span class="apidocCodeKeywordSpan
+">getAppName</span>(context) + "\\\"/Plugins/cordova-fabric-plugin/Fabric.framework/run " + pluginConfig.apiKey + " " + pluginConfig.apiSecret + '"';
+
+// Generate a unique ID for our new build phase.
+var id = xcodeProject.generateUuid();
+// Create the build phase.
+xcodeProject.hash.project.objects.PBXShellScriptBuildPhase[id] = {
+    isa: "PBXShellScriptBuildPhase",
+    buildActionMask: 2147483647,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-fabric-plugin.utilities.getPluginConfig" id="apidoc.element.cordova-fabric-plugin.utilities.getPluginConfig">
+        function <span class="apidocSignatureSpan">cordova-fabric-plugin.utilities.</span>getPluginConfig
+        <span class="apidocSignatureSpan">(platform)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getPluginConfig = function (platform) {
+
+    var platformConfigPath = path.join("..", "..", "..", platform + ".json");
+
+    var platformConfig = require(platformConfigPath);
+
+    var pluginId = this.getPluginId();
+
+    var apiKey = platformConfig.installed_plugins[pluginId].FABRIC_API_KEY;
+    var apiSecret = platformConfig.installed_plugins[pluginId].FABRIC_API_SECRET;
+
+    var config = {
+        apiKey: apiKey,
+        apiSecret: apiSecret
+    };
+
+    return config;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+     * This helper is used to add a build phase to the XCode project which runs a shell
+     * script during the build process. The script executes Crashlytics run command line
+     * tool with the API and Secret keys. This tool is used to upload the debug symbols
+     * (dSYMs) so that Crashlytics can display stack trace information in it's web console.
+     */
+    addShellScriptBuildPhase: function (context, xcodeProjectPath) {
+
+var pluginConfig = utilities.<span class="apidocCodeKeywordSpan">getPluginConfig</span>("ios");
+var xcode = context.requireCordovaModule("xcode");
+
+// Read and parse the XCode project (.pxbproj) from disk.
+// File format information: http://www.monobjc.net/xcode-project-file-format.html
+var xcodeProject = xcode.project(xcodeProjectPath);
+xcodeProject.parseSync();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-fabric-plugin.utilities.getPluginId" id="apidoc.element.cordova-fabric-plugin.utilities.getPluginId">
+        function <span class="apidocSignatureSpan">cordova-fabric-plugin.utilities.</span>getPluginId
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getPluginId = function () {
+    return "cordova-fabric-plugin";
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+     */
+    getPluginConfig: function(platform) {
+
+var platformConfigPath = path.join("..", "..", "..", platform + ".json");
+
+var platformConfig = require(platformConfigPath);
+
+var pluginId = this.<span class="apidocCodeKeywordSpan">getPluginId</span>();
+
+var apiKey = platformConfig.installed_plugins[pluginId].FABRIC_API_KEY;
+var apiSecret = platformConfig.installed_plugins[pluginId].FABRIC_API_SECRET;
+
+var config = {
+    apiKey: apiKey,
+    apiSecret: apiSecret
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-fabric-plugin.utilities.getXcodeProjectPath" id="apidoc.element.cordova-fabric-plugin.utilities.getXcodeProjectPath">
+        function <span class="apidocSignatureSpan">cordova-fabric-plugin.utilities.</span>getXcodeProjectPath
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getXcodeProjectPath = function (context) {
+
+    var appName = this.getAppName(context);
+
+    return path.join("platforms", "ios", appName + ".xcodeproj", "project.pbxproj");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        androidHelper.removeFabricBuildToolsFromGradle();
+        androidHelper.addFabricBuildToolsGradle();
+    }
+
+    // Add a build phase which runs a shell script that executes the Crashlytics
+    // run command line tool which uploads the debug symbols at build time.
+    if (platforms.indexOf("ios") !== -1) {
+        var xcodeProjectPath = utilities.<span class="apidocCodeKeywordSpan">getXcodeProjectPath</span>(context);
+        iosHelper.removeShellScriptBuildPhase(context, xcodeProjectPath);
+        iosHelper.addShellScriptBuildPhase(context, xcodeProjectPath);
+    }
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-fabric-plugin.utilities.readBuildGradle" id="apidoc.element.cordova-fabric-plugin.utilities.readBuildGradle">
+        function <span class="apidocSignatureSpan">cordova-fabric-plugin.utilities.</span>readBuildGradle
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">readBuildGradle = function () {
+    return fs.readFileSync(getBuildGradlePath(), "utf-8");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var path = require("path");
+var utilities = require("./utilities");
+
+module.exports = {
+
+    addFabricBuildToolsGradle: function() {
+
+var buildGradle = utilities.<span class="apidocCodeKeywordSpan">readBuildGradle</span>();
+
+buildGradle +=  [
+    "",
+    "// Fabric Cordova Plugin - Start Fabric Build Tools ",
+    "buildscript {",
+    "    repositories {",
+    "        maven { url 'https://maven.fabric.io/public' }",
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-fabric-plugin.utilities.writeBuildGradle" id="apidoc.element.cordova-fabric-plugin.utilities.writeBuildGradle">
+        function <span class="apidocSignatureSpan">cordova-fabric-plugin.utilities.</span>writeBuildGradle
+        <span class="apidocSignatureSpan">(buildGradle)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">writeBuildGradle = function (buildGradle) {
+    fs.writeFileSync(getBuildGradlePath(), buildGradle);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    "    }",
+    "}",
+    "",
+    "apply plugin: 'io.fabric'",
+    "// Fabric Cordova Plugin - End Fabric Build Tools",
+].join("\n");
+
+utilities.<span class="apidocCodeKeywordSpan">writeBuildGradle</span>(buildGradle);
+    },
+
+    removeFabricBuildToolsFromGradle: function() {
+
+var buildGradle = utilities.readBuildGradle();
+
+buildGradle = buildGradle.replace(/\n\/\/ Fabric Cordova Plugin - Start Fabric Build Tools[\s\S]*\/\/ Fabric Cordova Plugin - End
+ Fabric Build Tools/, "");
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
